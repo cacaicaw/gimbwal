@@ -122,7 +122,7 @@ function getFarPosition(containerRect, windowWidth, windowHeight, buttonWidth, b
 
 yesBtn.addEventListener('click', () => {
     title.innerHTML = "Gasss Ke link ini (https://heyzine.com/flip-book/9060e0804a.html), tapi kita punya pertanyaan! "Ayam, ayam apa yang paling besar?" keep dulu yaa jawabannya";
-    document.querySelector('img').src = "https://media.tenor.com/gUiu1zyxfzYAAAAi/good-night-kiss-kiss.gif";
+    document.querySelector('img').src = "https://i.pinimg.com/originals/7e/24/05/7e2405798d521fd461a1dc8a36dc4a79.gif";
     noBtn.style.display = 'none';
     yesBtn.style.display = 'none';
     bgMusic.play();
@@ -132,7 +132,7 @@ noBtn.addEventListener('click', () => {
     if (noCount < 3) {
         noCount++;
         title.innerHTML = messages[noCount - 1].text;
-        document.querySelector('img').src = messages[noCount - 1].image;
+        document.querySelector('img').src = "https://i.pinimg.com/originals/7e/24/05/7e2405798d521fd461a1dc8a36dc4a79.gif";
     } else {
         title.innerHTML = "TAPI BOONG HEHEHE, yakali ga mau kenalan sama kita :3. Gasss Ke link ini (https://heyzine.com/flip-book/9060e0804a.html), tapi kita punya pertanyaan! "Ayam, ayam apa yang paling besar?" keep dulu yaa jawabannya";
         if (!noBtn.classList.contains('running')) {
@@ -160,4 +160,5 @@ const handleButtonDodge = (e) => {
 noBtn.addEventListener('mouseover', handleButtonDodge);
 noBtn.addEventListener('touchstart', handleButtonDodge, { passive: false });
 noBtn.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
+
 
